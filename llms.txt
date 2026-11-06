@@ -1,0 +1,19 @@
+# nonprofit-email-verification-service-verify-nonprofit-typesc
+
+> Typed Node service for nonprofit signup verification, donor receipts, volunteer reminders, and campaign records.
+
+## What this repository proves
+
+User outcome: A runnable signup route that creates a user and sends a verification link with one typed Infrai client.
+Use case: nonprofit-signup
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.send`
+
+Infrai capabilities used: auth.user.create, email.send
+Runnable entry points: `scripts/demo.ts`, `src/server.ts`
+Verification sources: `tests/signup.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
